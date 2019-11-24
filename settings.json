@@ -1,0 +1,132 @@
+{
+    // "window.zoomLevel": 2,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "editor.renderWhitespace": "all",
+  
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+
+    // "terminal.integrated.lineHeight": 1.2,
+    "terminal.integrated.fontSize": 12,
+
+    "python.venvPath": "~/",
+  
+    "latex-workshop.latex.recipes": [
+      {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+      }
+    ],
+    "latex-workshop.latex.tools":
+    [
+      {
+        "name": "pdflatex",
+        "command": "pdflatex",
+        "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "%DOC%"
+        ],
+        "env": {}
+      },
+      {
+        "name": "bibtex",
+        "command": "bibtex",
+        "args": [
+          "%DOCFILE%"
+        ],
+        "env": {}
+      },
+    ],
+    "latex-workshop.latex.autoClean.run":"onBuilt",
+    "latex-workshop.latex.clean.fileTypes":[
+      "*.aux",
+      "*.bbl",
+      "*.blg",
+      "*.idx",
+      "*.ind",
+      "*.lof",
+      "*.lot",
+      "*.out",
+      "*.toc",
+      "*.acn",
+      "*.acr",
+      "*.alg",
+      "*.glg",
+      "*.glo",
+      "*.gls",
+      "*.ist",
+      "*.fls",
+      "*.log",
+      "*.fdb_latexmk",
+      "*.nav",
+      "*.snm",
+      "*.synctex.gz"
+    ],
+    "latex-workshop.view.pdf.viewer": "browser",
+    "explorer.confirmDragAndDrop": false,
+    "cSpell.enabledLanguageIds": [
+      "asciidoc",
+      "c",
+      "cpp",
+      "csharp",
+      "css",
+      "go",
+      "handlebars",
+      "html",
+      "jade",
+      "javascript",
+      "javascriptreact",
+      "json",
+      "latex",
+      "less",
+      "markdown",
+      "php",
+      "plaintext",
+      "pub",
+      "python",
+      "restructuredtext",
+      "rust",
+      "scss",
+      "tex",
+      "text",
+      "typescript",
+      "typescriptreact",
+      "yml",
+      "bib"
+    ],
+    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": true,
+    "cSpell.language": "en",
+    "cSpell.userWords": [
+      "adversarially",
+      "convolutional",
+      "dataset",
+      "discriminative",
+      "interpretability",
+      "irisa",
+      "reproducibility",
+      "shapelet",
+      "shapelets"
+    ],
+    //"cSpell.language": "fr-FR",
+    //"workbench.iconTheme": "vscode-icons"
+    // Columns at which to show vertical rulers
+    "editor.rulers": [
+      80
+    ],
+    "editor.renderControlCharacters": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "python.pythonPath": "/home/yicwang/tf12/bin/python",
+    "python.dataScience.jupyterServerURI": "local",
+  }
