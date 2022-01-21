@@ -1,6 +1,5 @@
 {
-    // "window.zoomLevel": 2,
-    "telemetry.enableTelemetry": false,
+  "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
     "editor.renderWhitespace": "all",
   
@@ -8,21 +7,37 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
 
+    // Columns at which to show vertical rulers
+    "editor.rulers": [
+      80
+    ],
+    "editor.renderControlCharacters": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+
     // "terminal.integrated.lineHeight": 1.2,
     "terminal.integrated.fontSize": 12,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
 
     "python.venvPath": "~/",
-  
+    "python.pythonPath": "/home/yicwang/tf12/bin/python",
+
+
+    // latex
     "latex-workshop.latex.recipes": [
+      {
+        "name": "pdflatex",
+        "tools": ["pdflatex"],
+      },
       {
       "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
       "tools": [
         "pdflatex",
         "bibtex",
         "pdflatex",
-        "pdflatex"
+        "pdflatex",
       ]
-      }
+      },
     ],
     "latex-workshop.latex.tools":
     [
@@ -69,10 +84,13 @@
       "*.fdb_latexmk",
       "*.nav",
       "*.snm",
-      "*.synctex.gz"
+      // "*.synctex.gz"
     ],
-    "latex-workshop.view.pdf.viewer": "browser",
-    "explorer.confirmDragAndDrop": false,
+    "latex-workshop.view.pdf.viewer": "evince",
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+
+
+
     "cSpell.enabledLanguageIds": [
       "asciidoc",
       "c",
@@ -104,7 +122,6 @@
       "bib"
     ],
     "extensions.ignoreRecommendations": true,
-    "explorer.confirmDelete": false,
     "breadcrumbs.enabled": true,
     "cSpell.language": "en",
     "cSpell.userWords": [
@@ -118,15 +135,10 @@
       "shapelet",
       "shapelets"
     ],
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.jupyterServerType": "local",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.zoomLevel": 1,
     //"cSpell.language": "fr-FR",
-    //"workbench.iconTheme": "vscode-icons"
-    // Columns at which to show vertical rulers
-    "editor.rulers": [
-      80
-    ],
-    "editor.renderControlCharacters": false,
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "python.pythonPath": "/home/yicwang/tf12/bin/python",
-    "python.dataScience.jupyterServerURI": "local",
+    //"workbench.iconTheme": "vscode-icons",
   }
